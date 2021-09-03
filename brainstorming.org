@@ -1,0 +1,39 @@
+#+TITLE: Brainstorming
+* Basic features
+** Addition
+*** TODO Implementation
++ we type "add" and put two arguments
+*** TODO Improvement
++ we type "add" and put some arguments
+*** TODO Error handling
+*** Rough work
+input(5) -> "5"
+#+begin_src python :results output
+def add(arg1,arg2):
+    sumResult = arg1 + arg2
+    return sumResult
+
+print(add("5","7"))
+#+end_src
+
+#+RESULTS:
+age    cage
+: 12
+*** Temp
+5 -> 110 THIS IS AN INTEGER(32bit)
+5.5 -> 110"." THIS IS AN FLOAT
+"5"+extra properties -> 110+extra properties THIS IS A STRING
+^A -> 0x00102FAB77
+
+** Substraction
+*** TODO Implementation
+*** TODO Improvement
+*** TODO Error handling
+** Multiplication
+*** TODO Implementation
+*** TODO Improvement
+*** TODO Error handling
+** Division
+*** TODO Implementation
+*** TODO Improvement
+*** TODO Error handling

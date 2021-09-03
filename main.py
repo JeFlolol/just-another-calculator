@@ -1,55 +1,91 @@
-# draft inputArg section 
-#we take input from prompt
-#put it in input()
-#take the output of input() and put it in int()
-#take output of int() and put it in our add()
+#!/usr/bin/env python3
 
-# draft InputOp section
+# Draft for InputArg section
+# we take input from prompt
+# put it in input()
+# take the output of input() and put it in int()
+# take output of int() and put it in our add()
+
+# Draft for InputOp section
 # we put a arg in input()
-# check if "add" is  returned
-# if "add" is returned 
+# check if "add" is returned
+# if "add" is returned
 # execute InputArg section
 # else display error msg
 
 def add(arg1,arg2):
     sumResult = arg1 + arg2
     return sumResult
-    
-#print(add(5,7))
 
-# inputOp section 
-InputOp = input("Enter operation:  ")
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                 
-if(InputOp == "add"):
-   
-    # inputArg section 
-    InputArg = input("enter argument 1: ")
-    convInputArg1 = int(InputArg)  #impo: create error handler for string input
-    InputArg = input("enter argument 2: ")
-    convInputArg2 = int(InputArg)  #impo: create error handler for string input
+# print(add(5,7))
+
+# ### InputOp section
+# InputOp = input("Enter operation: ")
+# # # dummy debug
+# # x = 10
+# # if (x == 10):
+# if (InputOp == "add"):
+#     ### InputArg section
+#     InputArg = input("Enter argument 1: ")
+#     convInArg1 = int(InputArg)       # IMPO: create error handler for string input
+#     InputArg = input("Enter argument 2: ")
+#     convInArg2 = int(InputArg)       # IMPO: create error handler for string input
+#     # print(InputArg)
+#     # print(type(InputArg))
+#     # print("--------")
+#     # print(convInArg)
+#     # print(type(convInArg))
+#     print(add(convInArg1,convInArg2))
+# else:
+#     print("You did not specity correct operation\n")
+#     print("Available operations are: \n")
+#     print("--- add")
+
+# ### InputArg section
+# InputArg = input("Enter argument 1: ")
+# convInArg1 = int(InputArg)       # IMPO: create error handler for string input
+# InputArg = input("Enter argument 2: ")
+# convInArg2 = int(InputArg)       # IMPO: create error handler for string input
+# # print(InputArg)
+# # print(type(InputArg))
+# # print("--------")
+# # print(convInArg)
+# # print(type(convInArg))
+
+# print(add(convInArg1,convInArg2))
+
+# Draft for MultiArg section
+# i want add() to take upto infinite number of args
+# so user will pass multiple args in input()
+# convert args from input() to a int
+# then append output into a list
+# use each element of list as an arg for add()
+# try to use input().split() to turn a number of input into a list
+# then pass in list as *arg into add()
+{5, 8, 32}
+{'5', '8', '32'}
+
+### MultiArg section
+InputOp = input("Enter operation: ")
+# # dummy debug
+# x = 10
+# if (x == 10):
+if (InputOp == "add"):
+    ### InputArg section
+    InputArg = input("Enter argument 1: ")
+    convInArg1 = int(InputArg)       # IMPO: create error handler for string input
+    InputArg = input("Enter argument 2: ")
+    convInArg2 = int(InputArg)       # IMPO: create error handler for string input
     # print(InputArg)
     # print(type(InputArg))
-    # print("-----")
-    # print(convInputArg)
-    # print(type(convInputArg))
+    # print("--------")
+    # print(convInArg)
+    # print(type(convInArg))
 
-    print(add(convInputArg1,convInputArg2)) 
-   
-else: 
-    print("You did not spcefy corrcet oparation")
-    print("Available oparations are: \n")
-    print("...add")
-
-
-#inputArg section 
-# InputArg = input("enter argument 1: ")
-# convInputArg1 = int(InputArg)  #impo: create error handler for string input
-# InputArg = input("enter argument 2: ")
-# convInputArg2 = int(InputArg)  #impo: create error handler for string input
-# print(InputArg)
-# print(type(InputArg))
-# print("-----")
-# print(convInputArg)
-# print(type(convInputArg))
-
-# print(add(convInputArg1,convInputArg2)) 
+    # listtest = [2, 3]
+    # print(add(*listtest))
+    print(add(convInArg1,convInArg2))
+else:
+    print("You did not specity correct operation\n")
+    print("Available operations are: \n")
+    print("--- add")
